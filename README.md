@@ -8,7 +8,7 @@ Used car dealerships operate on thin margins in a highly competitive market wher
 
 # 2. Source: 
   a. Used car dataset
-  b. Python File: 
+  b. Python File: https://github.com/sanchitag22/Usedcaranalysis_UCB/blob/main/Used_car_price_analysis_Sanchitag.ipynb
 
 ---
 # 3. Summary of Findings
