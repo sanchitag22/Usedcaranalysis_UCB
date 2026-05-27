@@ -2,8 +2,13 @@
 ### CRISP-DM Analysis | Used Car Dealership Pricing Study
 **Author:** Sanchita Gawand 
 
+## Project Overview
+
+This project applies the **CRISP-DM framework** to analyze what factors drive used car prices, providing actionable recommendations to a used car dealership on how to optimize their inventory and pricing strategy.
+
 # 1. Business Objective 
 Used car dealerships operate on thin margins in a highly competitive market where pricing decisions directly determine profitability and inventory turnover. Price a vehicle too high and it sits on the lot, tying up capital; price it too low and money is left on the table. Without a data-driven approach, pricing relies on intuition and experience alone, inconsistent and hard to scale.
+
 
 ---
 
@@ -19,7 +24,7 @@ Analysis of 426,000+ used car listings reveals that **vehicle age, mileage, manu
 | Factor | Impact |
 |--------|--------|
 | Vehicle age | Each additional year significantly lowers price; steepest drop in years 0–8 |
-| Mileage (odometer) | Strongest numeric predictor; vehicles under 60K miles hold value best |
+| Mileage (odometer) | Strongest numeric predictor: Strong negative correlation ; vehicles under 60K miles hold value best |
 | Vehicle type | Trucks and SUVs command the highest median prices in the market |
 | Manufacturer | GMC, Ram, Toyota, and Honda sustain strong resale value |
 | Condition | "Like new" and "excellent" condition vehicles price 30–50% above "fair" |
@@ -78,3 +83,33 @@ Analysis of 426,000+ used car listings reveals that **vehicle age, mileage, manu
 `pandas` · `numpy` · `matplotlib` · `seaborn` · `scikit-learn`  
 Models: Linear Regression, Ridge Regression (GridSearchCV), Lasso Regression  
 Validation: 5-fold cross-validation · RMSE · R²
+
+## Repository Structure
+
+```
+├── README.md                        ← This file
+├── used_car_price_analysis.ipynb    ← Full analysis notebook
+└── vehicles.csv                     ← Dataset (download from Kaggle)
+```
+
+---
+
+## How to Run
+
+1. Clone this repository
+2. Download `vehicles.csv` from [Kaggle](https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data)
+3. Place `vehicles.csv` in the same folder as the notebook
+4. Run `used_car_price_analysis.ipynb` in Jupyter or Google Colab
+
+**Dependencies:** `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`
+
+---
+
+## CRISP-DM Framework Applied
+
+```
+Business Understanding → Data Understanding → Data Preparation
+        ↓
+    Modeling → Evaluation → Deployment (Recommendations)
+```
+
